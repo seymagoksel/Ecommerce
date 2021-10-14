@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+   
+<style>
+ * {box-sizing: border-box;}
+ ul {list-style-type: none;}
+ body {font-family: 'Source Sans Pro', sans-serif;}
+
+ .month
+ {
+   padding: 10px 10px;
+   width: 300px;
+   height: 70px;       
+   background: #fff;
+   text-align: center;
+   margin-left: 30px;
+   margin-top: 5px;
+  }
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: #b78373;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 5px 0;
+  width: 300px;
+  margin-left: 31px;
+  background-color: #fff;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13%;
+  color: #b78373;
+  text-align: center;
+}
+
+.days {
+  padding: 5px 0;
+  width: 300px;
+  margin: 0;
+  margin-left: 31px;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background:#b78373;
+  color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
+
+p
+{
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    color: #616161;
+    margin-top: 20px;
+    margin-bottom: 1px;
+	margin-left: 30px;
+
+}
+
+</style>
+
+</head>
+<body>
+
+	
+         <img src="resim/randevu.jpg" >
+         <hr  size="2px" color="#e2ab9a">
+
+         <table >
+         	<tr>
+         		<td width="1800px" height="20px"></td>
+         		<td width="400px" height="20px"></td>
+         	</tr>
+         	<tr>
+         		<td width="1800px" height="250px">
+         			<table >
+         				<tr>
+         					<td><img width="80px" src="resim/unlem.jpg"></td>
+         					<td>	
+         						<p>
+         							Sevgili müşterilerimiz, içinde bulunduğumuz bu pandemi döneminde sizin ve çalışanlarımızın sağlığı için geçici bir süreliğine sizlere randevu hizmeti veremiyoruz.
+         						</p>
+         			            <p>En kısa zamanda tekrardan görüşmek dileğiyle.</p>
+         			        </td>
+         				</tr>
+         			</table>
+         			
+         		
+         		</td>
+         		<td width="400px" height="250px">
+         			
+
+                    <div class="month">      
+                        <ul>
+                            <li class="prev">&#10094;</li>
+                            <li class="next">&#10095;</li>
+                            <li>Mayıs<br>
+                                  <span style="font-size:18px">2020</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                        <ul class="weekdays">
+                            <li>Pt</li>
+                            <li>Sa</li>
+                            <li>Ça</li>
+                            <li>Pe</li>
+                            <li>Cu</li>
+                            <li>Ct</li>
+                            <li>Pa</li>
+                        </ul>
+
+                        <ul class="days">  
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li><span class="active">10</span></li>
+                            <li>11</li>
+                            <li>12</li>
+                            <li>13</li>
+                            <li>14</li>
+                            <li>15</li>
+                            <li>16</li>
+                            <li>17</li>
+                            <li>18</li>
+                            <li>19</li>
+                            <li>20</li>
+                            <li>21</li>
+                            <li>22</li>
+                            <li>23</li>
+                            <li>24</li>
+                            <li>25</li>
+                            <li>26</li>
+                            <li>27</li>
+                            <li>28</li>
+                            <li>29</li>
+                            <li>30</li>
+                            <li>31</li>
+                        </ul>
+         		</td>
+         	</tr>
+         	<tr>
+         		<td width="1800px" height="100px"></td>
+         		<td width="400px" height="100px"></td>
+         	</tr>
+
+        </table>
+
+        <hr size="2px" color="#e2ab9a">
+
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="https://www.instagram.com/" target="new"><img src="resim/instagram.jpg"></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/explore" target="new"><img src="resim/twitter.jpg"></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="iletisim.html" target="sayfa"><img src="resim/iletisim.jpg"></a>
+        </li>
+    </ul>
+ 
+</body>
+</html>
